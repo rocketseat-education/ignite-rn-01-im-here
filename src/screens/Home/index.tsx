@@ -2,7 +2,7 @@ import { Text, View } from "react-native";
 
 import { styles } from "./style";
 
-export default function Home() {
+export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>

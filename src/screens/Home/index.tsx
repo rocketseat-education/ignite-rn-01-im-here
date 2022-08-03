@@ -11,7 +11,6 @@ export function Home() {
   
   function handleParticipantAdd() {
     if (participants.includes(participantName)) {
-      console.log('Entrou na condição de que o participante existe!', '(handleParticipantAdd)');
       return Alert.alert("Participante existe", "Já existe um participante na lista com esse nome.");
     }
 
@@ -20,9 +19,7 @@ export function Home() {
   }
 
   function handleParticipantRemove(name: string) {
-    return console.log("Nome do usuário => ", name);
     
-
     Alert.alert("Remover", `Remover o participante ${name}?`, [
       {
         text: 'Sim',
